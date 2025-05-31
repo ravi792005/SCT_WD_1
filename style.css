@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+  color: #333;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  transition: all 0.3s ease;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header.scrolled {
+  background: linear-gradient(90deg, #f12711, #f5af19);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background 0.4s ease, transform 0.3s ease;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+section {
+  padding: 100px 20px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+#home {
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  color: #222;
+}
+
+#features {
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+}
+
+#about {
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+}
+
+#contact {
+  background: linear-gradient(to right, #fdcbf1, #e6dee9);
+}
